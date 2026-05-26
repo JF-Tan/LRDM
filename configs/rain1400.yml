@@ -1,0 +1,35 @@
+
+sampling_steps: 5
+training_num_steps: 120000
+diffusion_timesteps: 1000
+objective: 'pred_res_noise'
+loss_type: 'l1'
+
+unet_hiddens: 64
+unet_dim_mults: [1, 2, 4, 8]
+share_encoder: false
+
+enable_res_low_rank : true
+rank_func : 100
+save_folder : 'log/rain1400'
+
+data_path : ["data/train/gt",
+             "data/train/data",
+             "data/test/gt",
+             "data/test/data",]
+
+# pretrained_ckpt
+pretrained_ckpt: log/rain1400/model-120.pt
+
+save_and_sample_every : 1000
+condition : true
+input_condition : false
+input_condition_mask : false
+# sampling_timesteps_original_ddim_ddpm : 250
+
+train_batch_size : 1
+num_samples : 1
+sum_scale : 1  # beta
+image_size : 256
+train_lr: 8e-5
+ema_decay: 0.995

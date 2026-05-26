@@ -1516,7 +1516,12 @@ class Trainer(object):
         torch.save(data, str(self.results_folder / f'model-{milestone}.pt'))
 
     def load(self, milestone):
-        path = Path(self.results_folder / f'model-{milestone}.pt')
+        if isinstance(milestone, str) and milestone.endswith('.pt'):
+            path = Path(milestone)
+        elif isinstance(milestone, int):
+            path = Path(self.results_folder / f'model-{milestone}.pt')
+        else:
+            raise ValueError("Invalid ckpt type")
 
         if path.exists():
             data = torch.load(

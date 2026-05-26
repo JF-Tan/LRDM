@@ -2,9 +2,11 @@
 __pycache__/
 *.py[codz]
 *$py.class
-
+.vscode/
 # C extensions
 *.so
+log/
+data/
 
 # Distribution / packaging
 .Python
@@ -216,3 +218,4 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+data
