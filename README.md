@@ -52,6 +52,7 @@ If you are using our code, model, data, or evaluation pipeline, please consider 
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     month     = {June},
     year      = {2026},
+    pages     = {35747-35757}
 }
 ```
 
