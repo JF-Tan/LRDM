@@ -1,7 +1,7 @@
 # Low-Rank Residual Diffusion Models (LRDM)
 
 This repository contains the code used to create the results presented in the paper: [Low-Rank Residual Diffusion Models
-](https://openaccess.thecvf.com/content/)
+]([https://openaccess.thecvf.com/content/](https://openaccess.thecvf.com/content/CVPR2026/papers/Tan_Low-Rank_Residual_Diffusion_Models_CVPR_2026_paper.pdf))
 
 
 ![LRDM](./poster/lrdm-poster.png)
